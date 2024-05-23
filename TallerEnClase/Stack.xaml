@@ -1,0 +1,44 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerEnClase.Stack"
+             Title="StackLayout">
+    <StackLayout Padding="20" Spacing="20">
+
+        <!-- Título -->
+        <Label Text="Mi StackLayout"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+        <!-- Botón 1 -->
+        <Button Text="Grid"
+                BackgroundColor="#3498db"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="Button_Clicked_Grid"/>
+
+        <!-- Botón 2 -->
+        <Button Text="Absolute"
+                BackgroundColor="#2ecc71"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="Button_Clicked_Absolute"/>
+
+        <!-- Botón 3 -->
+        <Button Text="FLex"
+                BackgroundColor="#e74c3c"
+                TextColor="White"
+                CornerRadius="10"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand" 
+                Clicked="Button_Clicked_Flex"/>
+                
+
+
+    </StackLayout>
+</ContentPage>

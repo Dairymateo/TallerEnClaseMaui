@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerEnClase.Flex"
+             Title="Flex">
+
+    <FlexLayout Direction="Column"
+                AlignItems="Center"
+                JustifyContent="Center"
+                Padding="20">
+
+        <!-- Contenedor para Label e ImageButton en una fila -->
+        <StackLayout
+            Padding="1">
+            <ImageButton
+                Source="picachu_imagen.png"
+                BackgroundColor="Transparent"
+                CornerRadius="10"
+                WidthRequest="50"
+                HeightRequest="50"
+                Margin="0,0,10,0"
+                Clicked="Button_Clicked_Stack"
+                Padding="1"/>
+            <Label Text="Pikachu" VerticalOptions="Center"/>
+        </StackLayout>
+        <StackLayout
+            Padding="2">
+            <ImageButton
+                Source="charizard.png"
+                BackgroundColor="Transparent"
+                CornerRadius="10"
+                WidthRequest="50"
+                HeightRequest="50"
+                Margin="0,0,10,0"
+                Clicked="Button_Clicked_Grid"
+                Padding="1"/>
+                
+            <Label Text="Charizard" VerticalOptions="Center"/>
+        </StackLayout>
+
+
+
+
+    </FlexLayout>
+</ContentPage>
